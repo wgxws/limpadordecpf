@@ -165,7 +165,7 @@ function processar() {
     let status = document.getElementById("status");
     let resultado = document.getElementById("resultado");
 
-    let regex = /\b\d{3}\.?\d{3}\.?\d{3}-?\d{2}\b/g;
+    let regex = /\b\d{3}\.?\d{3}\.?\d{3}[-.]?\d{2}\b/g;
     let encontrados = texto.match(regex) || [];
 
     encontrados = encontrados.map(cpf => cpf.replace(/\D/g, ""));
